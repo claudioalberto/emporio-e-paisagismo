@@ -12,11 +12,120 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #000;
-  background-color: #fafafa;
+  background-color: #eee;
 }
 body h1, body h2, body h3 {
   font-family: "Lao UI Bold", sans-serif;
   font-weight: 700;
+}
+
+header .navbar-brand {
+  width: 200px;
+}
+header .menutoggler {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  border: 0;
+  width: 60px;
+  height: 50px;
+  z-index: 100;
+  background-color: #1D1C1C;
+}
+header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
+  background-color: #fafafa;
+  height: 5px;
+  width: 35px;
+  margin: 6px 0px 6px 0px;
+  transition: all 0.5s ease-in-out;
+}
+header .menutoggler.open .one, header .menutoggler.open .two, header .menutoggler.open .three {
+  background-color: #369139;
+}
+header .menutoggler.open .one {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+header .menutoggler.open .two {
+  transform: rotate(45deg);
+}
+header .menutoggler.open .three {
+  transform: rotate(-45deg) translate(8px, -9px);
+}
+header .navbar-menu-mobile {
+  display: none;
+  opacity: 0;
+  background-color: #1D1C1C;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar-menu-mobile.on {
+  display: flex;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+header .navbar-menu-mobile .navbar-nav .nav-item .nav-link {
+  color: #fafafa;
+  font-weight: 200;
+  font-size: 1.3em;
+  transition-duration: 0.5s;
+}
+header .navbar-menu-mobile .navbar-nav .nav-item.active, header .navbar-menu-mobile .navbar-nav .nav-item:focus, header .navbar-menu-mobile .navbar-nav .nav-item:active {
+  background-color: transparent;
+}
+header .navbar-menu-mobile .info span strong {
+  color: #fafafa;
+}
+header .navbar-menu-mobile .socials a {
+  color: #fafafa;
+}
+header .socials a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.4em;
+}
+header .info span {
+  color: #369139;
+}
+header .info span strong {
+  color: #1D1C1C;
+  font-size: 1.1em;
+}
+header .navbar-nav .nav-item {
+  transition: all 300ms ease;
+}
+header .navbar-nav .nav-item .nav-link {
+  color: #1D1C1C;
+  font-weight: 600;
+}
+header .navbar-nav .nav-item:hover, header .navbar-nav .nav-item.active {
+  background-color: #369139;
+}
+header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.active .nav-link {
+  color: #fafafa;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */
