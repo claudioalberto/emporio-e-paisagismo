@@ -7,10 +7,144 @@ body{
     font-weight: 400;
     line-height: 1;
     color: #000;
-    background-color: #fafafa;
+    background-color: #eee;
     h1, h2, h3{
         font-family: $font-family-title, sans-serif;
         font-weight: 700;
     }
 }
 
+header{
+    .navbar-brand{
+        width: 200px;
+
+    }
+    .menutoggler{
+        position: absolute;
+        top: 50px;
+        left: -20px;
+        border: 0;
+        width: 60px;
+        height: 50px;
+        z-index: 100;
+        background-color: $black;
+        .one, .two, .three{
+            background-color: $white;
+            height: 5px;
+            width: 35px;
+            margin: 6px 0px 6px 0px;
+            transition: all 0.5s ease-in-out;
+        }
+        &.open{
+            .one, .two, .three{
+                background-color: $green;
+               
+            }
+            .one{
+                transform: rotate(45deg) translate(7px, 7px);
+            }
+            .two{
+                transform: rotate(45deg);
+            }
+            .three{
+                transform: rotate(-45deg) translate(8px, -9px);
+            }
+        }
+        
+      
+    }
+    .navbar-menu-mobile{
+        display: none;
+        &.on{
+            display: flex;
+            animation-name: fade-in;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        opacity: 0;
+        background-color: $black;
+        position: absolute;
+        transition: all 0.5s ease-in-out;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $white;
+                    font-weight: 200;
+                    font-size: 1.3em;
+                    transition-duration: 0.5s;
+                }
+                &.active, &:focus, &:active{
+                    background-color: transparent;
+                }
+            }
+        }
+        .info{
+            span{
+                strong{
+                    color: $white;
+                }
+            }
+        }
+        .socials{
+            a{
+                color: $white;
+            }
+        }
+    }
+    .socials{
+        a{
+            text-decoration: none;
+            color: $gray;
+            font-size: 1.4em;
+        }
+    }
+    .info{
+        span{
+            color: $green;
+            strong{
+                color: $black;
+                font-size: 1.1em;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+           transition: all 300ms ease;
+            .nav-link{
+                color: $black;
+                font-weight: 600;
+            }
+            &:hover, &.active{
+                background-color: $green;
+                
+                .nav-link{
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
