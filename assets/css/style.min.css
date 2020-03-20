@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.btn-outline-primary {
+  border-color: #707070;
+  border-width: 2px;
+  color: #707070;
+  text-decoration: none;
+}
+.btn-outline-primary:hover {
+  background-color: #707070;
+  color: #fafafa !important;
+  border-color: #707070;
+}
+
+.btn-outline-white {
+  border-color: #fafafa;
+  border-width: 1px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.btn-outline-white:hover {
+  background-color: #fafafa;
+  color: #000 !important;
+  border-color: #fafafa;
+}
+
+.navbarMain .nav-item .nav-link {
+  color: #707070;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
+}
+
+.carrousel {
+  min-height: 500px;
+}
+.carrousel .carrousel__item {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.carrousel .carrousel__item figure img {
+  object-fit: contain;
+}
+.carrousel .carrousel__item figure figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .carrousel__item figure figcaption h2 {
+  font-size: 3.5em !important;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+.carrousel .carrousel__item figure figcaption p {
+  color: #fafafa;
+  font-size: 1.25rem;
+}
+
+.quem-somos__section .quem-somos__title {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.quem-somos__section .quem-somos__title::before {
+  content: "";
+  height: 3px;
+  width: 140px;
+  background-color: #000;
+  position: absolute;
+  top: 2.5em;
+}
+.quem-somos__section h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.quem-somos__section p {
+  line-height: 1.5;
+}
+.quem-somos__section img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.valores__section {
+  background-image: url("../images/valores-bg.png");
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+.valores__section .valores__title {
+  color: #fafafa;
+  font-weight: 700;
+}
+.valores__section .valores__title::before {
+  content: "";
+  height: 3px;
+  width: 140px;
+  background-color: #fafafa;
+  position: absolute;
+  top: 3em;
+  right: 45%;
+}
+.valores__section .valores__item .svg-inline--fa {
+  color: #AFAFAF;
+  height: 4em !important;
+}
+.valores__section .valores__item .fa-w-18, .valores__section .valores__item .fa-w-20, .valores__section .valores__item .fa-w-14, .valores__section .valores__item .fa-w-16 {
+  width: 24.125em;
+}
+.valores__section .valores__item h3 {
+  color: #fafafa;
+}
+.valores__section .valores__item p {
+  line-height: 1.5;
+  color: #fafafa;
+}
+
+/*# sourceMappingURL=style.min.css.map */
