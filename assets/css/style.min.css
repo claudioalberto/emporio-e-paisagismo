@@ -25,7 +25,7 @@ header .navbar-brand {
 header .menutoggler {
   position: absolute;
   top: 50px;
-  left: -20px;
+  right: 0px;
   border: 0;
   width: 60px;
   height: 50px;
@@ -36,8 +36,8 @@ header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
   background-color: #fafafa;
   height: 5px;
   width: 35px;
-  margin: 6px 0px 6px 0px;
-  transition: all 0.5s ease-in-out;
+  margin: 6px 0px 6px 6px;
+  transition: all 0.3s ease-in-out;
 }
 header .menutoggler.open .one, header .menutoggler.open .two, header .menutoggler.open .three {
   background-color: #369139;
@@ -67,7 +67,7 @@ header .navbar-menu-mobile {
 header .navbar-menu-mobile.on {
   display: flex;
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 header .navbar-menu-mobile .navbar-nav .nav-item .nav-link {
@@ -90,12 +90,27 @@ header .socials a {
   color: #707070;
   font-size: 1.4em;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header .socials a {
+    font-size: 1.2em;
+  }
+}
 header .info span {
   color: #369139;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header .info span {
+    font-size: 0.9em;
+  }
 }
 header .info span strong {
   color: #1D1C1C;
   font-size: 1.1em;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header .info span strong {
+    font-size: 0.9em;
+  }
 }
 header .navbar-nav .nav-item {
   transition: all 300ms ease;
@@ -125,6 +140,11 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
   }
   100% {
     opacity: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .w-lg-80 {
+    width: 80% !important;
   }
 }
 
