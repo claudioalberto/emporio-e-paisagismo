@@ -153,9 +153,6 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
   line-height: 1.5;
 }
 
-.carrousel-arranjos {
-  height: 700px;
-}
 .carrousel-arranjos h2 {
   font-family: "Lao UI Regular";
   color: #369139;
@@ -224,6 +221,21 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
 .carrousel-arranjos .arranjos-slider .slick-dots li button:before {
   color: #369139;
   font-size: 10px;
+}
+
+.projetos-personalizados h2 {
+  color: #369139;
+  font-size: 2.5em;
+}
+.projetos-personalizados p {
+  line-height: 1.5;
+}
+.projetos-personalizados .projetos-personalizados__photos {
+  background-color: #369139;
+}
+.projetos-personalizados .projetos-personalizados__photos .projetos-personalizados__photos-item img {
+  height: 350px;
+  object-fit: cover;
 }
 
 @keyframes fade-in {
