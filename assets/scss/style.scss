@@ -137,8 +137,25 @@ header{
                 }
             }
         }
+    }   
+}
+.banner-main{
+    h2{
+        font-size: 4em;
+        @media screen and (min-width: 1025px) and (max-width: 1368px) {
+            font-size: 3em;
+        }
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 3em;
+        }
+        @media screen and (max-width: 768px){
+            font-size: 3em;
+        }
     }
-    
+    p{
+        font-size: 1.1em;
+        line-height: 1.5;
+    }
 }
 
 @keyframes fade-in{
