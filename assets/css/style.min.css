@@ -29,7 +29,7 @@ header .menutoggler {
   border: 0;
   width: 60px;
   height: 50px;
-  z-index: 100;
+  z-index: 1001;
   background-color: #1D1C1C;
 }
 header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
@@ -38,6 +38,9 @@ header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
   width: 35px;
   margin: 6px 0px 6px 6px;
   transition: all 0.3s ease-in-out;
+}
+header .menutoggler.open {
+  background-color: transparent;
 }
 header .menutoggler.open .one, header .menutoggler.open .two, header .menutoggler.open .three {
   background-color: #369139;
@@ -54,13 +57,14 @@ header .menutoggler.open .three {
 header .navbar-menu-mobile {
   display: none;
   opacity: 0;
-  background-color: #1D1C1C;
+  background-color: rgba(29, 28, 28, 0.95);
   position: absolute;
   transition: all 0.5s ease-in-out;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
 }
@@ -147,6 +151,79 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
 .banner-main p {
   font-size: 1.1em;
   line-height: 1.5;
+}
+
+.carrousel-arranjos {
+  height: 700px;
+}
+.carrousel-arranjos h2 {
+  font-family: "Lao UI Regular";
+  color: #369139;
+  font-weight: 200;
+  font-size: 3em;
+  line-height: 1;
+}
+.carrousel-arranjos h2 strong {
+  font-weight: 700;
+  font-size: 2em;
+  font-family: "Lao UI Bold";
+}
+@media screen and (max-width: 1368px) {
+  .carrousel-arranjos h2 strong {
+    font-size: 1.5em;
+  }
+}
+.carrousel-arranjos p {
+  line-height: 1.5;
+}
+.carrousel-arranjos ul li {
+  list-style: none;
+  border: 2px solid rgba(165, 165, 165, 0.5);
+  font-weight: 700;
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+.carrousel-arranjos ul li:hover {
+  background-color: rgba(165, 165, 165, 0.5);
+}
+.carrousel-arranjos .arranjos-slider {
+  height: 450px;
+}
+@media screen and (min-width: 768px) {
+  .carrousel-arranjos .arranjos-slider {
+    height: 525px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .carrousel-arranjos .arranjos-slider {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .carrousel-arranjos .arranjos-slider {
+    height: 650px;
+  }
+}
+.carrousel-arranjos .arranjos-slider .arranjos-slider__item img {
+  height: 450px;
+  object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  .carrousel-arranjos .arranjos-slider .arranjos-slider__item img {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .carrousel-arranjos .arranjos-slider .arranjos-slider__item img {
+    height: 650px;
+  }
+}
+.carrousel-arranjos .arranjos-slider .slick-dots li {
+  border: 0;
+}
+.carrousel-arranjos .arranjos-slider .slick-dots li button:before {
+  color: #369139;
+  font-size: 10px;
 }
 
 @keyframes fade-in {
