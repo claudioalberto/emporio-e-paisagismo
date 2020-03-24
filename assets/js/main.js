@@ -1,5 +1,26 @@
 $('document').ready(() =>{
-
+    $('#arranjos-slider').slick({
+        dots : true,
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1368,
+                settings: {
+                    slidesToScroll: 2,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToScroll: 1, 
+                    slidesToShow: 1
+                }
+            }
+        ]
+    })
 });
 let show = true;
 const menuSection = document.querySelector('.navbar-menu-mobile');
