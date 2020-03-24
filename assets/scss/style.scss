@@ -160,7 +160,7 @@ header{
     }
 }
 .carrousel-arranjos{
-    height: 700px;
+    // height: 700px;
     h2{
         font-family: $font-family-default;
         color: $green;
@@ -220,6 +220,25 @@ header{
                 color: $green;
                 font-size: 10px;
             }
+        }
+    }
+}
+
+.projetos-personalizados{
+    h2{
+        color: $green;
+        font-size: 2.5em;
+    }
+    p{
+        line-height: 1.5;
+    }
+    .projetos-personalizados__photos{
+        background-color: $green;
+        .projetos-personalizados__photos-item{
+           img{
+            height: 350px;
+            object-fit: cover;
+           }
         }
     }
 }
