@@ -13,6 +13,7 @@ body {
   line-height: 1;
   color: #000;
   background-color: #eee;
+  border-top: 3px solid #369139;
 }
 body h1, body h2, body h3 {
   font-family: "Lao UI Bold", sans-serif;
