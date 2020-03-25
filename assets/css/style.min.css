@@ -15,7 +15,9 @@ body {
   background-color: #eee;
   border-top: 3px solid #369139;
 }
-body h1, body h2, body h3 {
+body h1,
+body h2,
+body h3 {
   font-family: "Lao UI Bold", sans-serif;
   font-weight: 700;
 }
@@ -33,7 +35,9 @@ header .menutoggler {
   z-index: 1001;
   background-color: #1D1C1C;
 }
-header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
+header .menutoggler .one,
+header .menutoggler .two,
+header .menutoggler .three {
   background-color: #fafafa;
   height: 5px;
   width: 35px;
@@ -43,7 +47,9 @@ header .menutoggler .one, header .menutoggler .two, header .menutoggler .three {
 header .menutoggler.open {
   background-color: transparent;
 }
-header .menutoggler.open .one, header .menutoggler.open .two, header .menutoggler.open .three {
+header .menutoggler.open .one,
+header .menutoggler.open .two,
+header .menutoggler.open .three {
   background-color: #369139;
 }
 header .menutoggler.open .one {
@@ -237,6 +243,19 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
 .projetos-personalizados .projetos-personalizados__photos .projetos-personalizados__photos-item img {
   height: 350px;
   object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .newsletter h2 {
+    font-size: 1.75em;
+  }
+}
+.newsletter .form-control {
+  height: 60px;
+  background-color: #DFDFDF;
+}
+.newsletter input[type=submit] {
+  height: 60px;
 }
 
 @keyframes fade-in {

@@ -1,26 +1,31 @@
 @import 'variables';
 @import 'typograph';
 
-body{
+body {
     font-family: $font-family-default, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1;
     color: #000;
     background-color: #eee;
-    h1, h2, h3{
+
+    h1,
+    h2,
+    h3 {
         font-family: $font-family-title, sans-serif;
         font-weight: 700;
     }
+
     border-top: 3px solid $green;
 }
 
-header{
-    .navbar-brand{
+header {
+    .navbar-brand {
         width: 200px;
 
     }
-    .menutoggler{
+
+    .menutoggler {
         position: absolute;
         top: 50px;
         right: 0px;
@@ -29,40 +34,53 @@ header{
         height: 50px;
         z-index: 1001;
         background-color: $black;
-        .one, .two, .three{
+
+        .one,
+        .two,
+        .three {
             background-color: $white;
             height: 5px;
             width: 35px;
             margin: 6px 0px 6px 6px;
             transition: all 0.3s ease-in-out;
         }
-        &.open{
+
+        &.open {
             background-color: transparent;
-            .one, .two, .three{
+
+            .one,
+            .two,
+            .three {
                 background-color: $green;
-               
+
             }
-            .one{
+
+            .one {
                 transform: rotate(45deg) translate(7px, 7px);
             }
-            .two{
+
+            .two {
                 transform: rotate(45deg);
             }
-            .three{
+
+            .three {
                 transform: rotate(-45deg) translate(8px, -9px);
             }
         }
-        
-      
+
+
     }
-    .navbar-menu-mobile{
+
+    .navbar-menu-mobile {
         display: none;
-        &.on{
+
+        &.on {
             display: flex;
             animation-name: fade-in;
             animation-duration: 0.3s;
             animation-fill-mode: forwards;
         }
+
         opacity: 0;
         background-color: rgba($black, 0.95);
         position: absolute;
@@ -74,150 +92,189 @@ header{
         z-index: 1000;
         justify-content: center;
         align-items: center;
-        .navbar-nav{
-            .nav-item{
-                .nav-link{
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
                     color: $white;
                     font-weight: 200;
                     font-size: 1.3em;
                     transition-duration: 0.5s;
                 }
-                &.active, &:focus, &:active{
+
+                &.active,
+                &:focus,
+                &:active {
                     background-color: transparent;
                 }
             }
         }
-        .info{
-            span{
-                strong{
+
+        .info {
+            span {
+                strong {
                     color: $white;
                 }
             }
         }
-        .socials{
-            a{
+
+        .socials {
+            a {
                 color: $white;
             }
         }
     }
-    .socials{
-        a{
+
+    .socials {
+        a {
             text-decoration: none;
             color: $gray;
             font-size: 1.4em;
-            @media screen and (min-width:769px) and (max-width: 1024px){
+
+            @media screen and (min-width:769px) and (max-width: 1024px) {
                 font-size: 1.2em;
             }
         }
     }
-    .info{
-        span{
+
+    .info {
+        span {
             color: $green;
-            @media screen and (min-width:769px) and (max-width: 1024px){
+
+            @media screen and (min-width:769px) and (max-width: 1024px) {
                 font-size: 0.9em;
             }
-            strong{
+
+            strong {
                 color: $black;
                 font-size: 1.1em;
-                @media screen and (min-width:769px) and (max-width: 1024px){
+
+                @media screen and (min-width:769px) and (max-width: 1024px) {
                     font-size: 0.9em;
                 }
             }
         }
     }
-    .navbar-nav{
-        .nav-item{
-           transition: all 300ms ease;
-            .nav-link{
+
+    .navbar-nav {
+        .nav-item {
+            transition: all 300ms ease;
+
+            .nav-link {
                 color: $black;
                 font-weight: 600;
             }
-            &:hover, &.active{
+
+            &:hover,
+            &.active {
                 background-color: $green;
-                
-                .nav-link{
+
+                .nav-link {
                     color: $white;
                 }
             }
         }
-    }   
+    }
 }
-.banner-main{
-    h2{
+
+.banner-main {
+    h2 {
         font-size: 4em;
+
         @media screen and (min-width: 1025px) and (max-width: 1368px) {
             font-size: 3em;
         }
+
         @media screen and (min-width: 769px) and (max-width: 1024px) {
             font-size: 3em;
         }
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             font-size: 3em;
         }
     }
-    p{
+
+    p {
         font-size: 1.1em;
         line-height: 1.5;
     }
 }
-.carrousel-arranjos{
+
+.carrousel-arranjos {
+
     // height: 700px;
-    h2{
+    h2 {
         font-family: $font-family-default;
         color: $green;
         font-weight: 200;
         font-size: 3em;
         line-height: 1;
-        strong{
+
+        strong {
             font-weight: 700;
             font-size: 2em;
-            @media screen and (max-width: 1368px){
+
+            @media screen and (max-width: 1368px) {
                 font-size: 1.5em;
             }
+
             font-family: $font-family-title;
         }
     }
-    p{
+
+    p {
         line-height: 1.5;
     }
-    ul{
-        li{
+
+    ul {
+        li {
             list-style: none;
             border: 2px solid rgba(#A5A5A5, 0.5);
             font-weight: 700;
             font-size: 1.2em;
             transition: all 0.3s ease-in-out;
-            &:hover{
+
+            &:hover {
                 background-color: rgba(#a5a5a5, 0.5);
             }
         }
     }
-    .arranjos-slider{
+
+    .arranjos-slider {
         height: 450px;
-        @media screen and (min-width: 768px){
+
+        @media screen and (min-width: 768px) {
             height: 525px;
         }
-        @media screen and (min-width: 1366px){
+
+        @media screen and (min-width: 1366px) {
             height: 600px;
         }
-        @media screen and (min-width: 1920px){
+
+        @media screen and (min-width: 1920px) {
             height: 650px;
         }
-        .arranjos-slider__item{
-            img{
+
+        .arranjos-slider__item {
+            img {
                 height: 450px;
-                @media screen and (min-width: 768px){
+
+                @media screen and (min-width: 768px) {
                     height: 600px;
                 }
-                @media screen and (min-width: 1920px){
+
+                @media screen and (min-width: 1920px) {
                     height: 650px;
                 }
+
                 object-fit: contain;
             }
         }
+
         .slick-dots li {
             border: 0;
-            button:before{
+
+            button:before {
                 color: $green;
                 font-size: 10px;
             }
@@ -225,44 +282,65 @@ header{
     }
 }
 
-.projetos-personalizados{
-    h2{
+.projetos-personalizados {
+    h2 {
         color: $green;
         font-size: 2.5em;
     }
-    p{
+
+    p {
         line-height: 1.5;
     }
-    .projetos-personalizados__photos{
+
+    .projetos-personalizados__photos {
         background-color: $green;
-        .projetos-personalizados__photos-item{
-           img{
-            height: 350px;
-            object-fit: cover;
-           }
+
+        .projetos-personalizados__photos-item {
+            img {
+                height: 350px;
+                object-fit: cover;
+            }
         }
     }
 }
 
-@keyframes fade-in{
-    0%{
+.newsletter{
+    h2{
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            font-size: 1.75em;
+        }
+    }
+    .form-control{
+        height: 60px;
+        background-color: $gray-light;
+    }
+    input[type="submit"]{
+        height: 60px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes fade-out{
-    0%{
+
+@keyframes fade-out {
+    0% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
-.w-lg-80{
-    @media screen and (min-width:769px) and (max-width: 1024px){
+.w-lg-80 {
+    @media screen and (min-width:769px) and (max-width: 1024px) {
         width: 80% !important;
     }
 }
