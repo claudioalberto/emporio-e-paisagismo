@@ -20,7 +20,17 @@ $('document').ready(() =>{
                 }
             }
         ]
-    })
+    });
+    let screen = window.matchMedia("(max-width: 500px)");
+    if(screen.matches){
+        $('.slider-projetos-personalizados').slick({
+            dots: true,
+            arrows: false,
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
+    }
+    
 });
 let show = true;
 const menuSection = document.querySelector('.navbar-menu-mobile');

@@ -244,6 +244,13 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
   height: 350px;
   object-fit: cover;
 }
+.projetos-personalizados .slick-dots li {
+  border: 0;
+}
+.projetos-personalizados .slick-dots li button:before {
+  color: #fafafa;
+  font-size: 10px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .newsletter h2 {
