@@ -258,6 +258,10 @@ header .navbar-nav .nav-item:hover .nav-link, header .navbar-nav .nav-item.activ
   height: 60px;
 }
 
+footer {
+  color: #707070;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
