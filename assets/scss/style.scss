@@ -302,6 +302,14 @@ header {
             }
         }
     }
+    .slick-dots li {
+        border: 0;
+
+        button:before {
+            color: $white;
+            font-size: 10px;
+        }
+    }
 }
 
 .newsletter{
